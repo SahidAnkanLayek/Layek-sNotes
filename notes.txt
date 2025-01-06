@@ -151,6 +151,17 @@ If one item has a flex-shrink of 2 and another has 1, the first item will shrink
 
 
 
+CssGridNotes name akta new branch create korlam ..
+ai branch tai ami pore gird ar opor notun kichu notes update korbo okk ..in sha allaha
+
+1.new branch create korbo
+2.switch the newly created branch 
+3.write some code or we can say make a new features 
+4.add those changes using git add .
+5.commit those changes
+6.done 
+7.Ready to merge for main branch 
+
 
 
 
