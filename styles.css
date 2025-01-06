@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family:'poppins',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #a1c3ff;
+}
+img{
+  max-width: 100%;
+
+}
+h1,h2{
+  margin-bottom:15px;
+
+}
+ul{
+  list-style-type:none;
+}
+.container{
+  max-width: 1100 px ;
+  margin: 0 auto ;
+  padding: 0 30px ;
+}
+.navbar{
+  background-color:blue;
+  color: white;
+  height:60px;
+}
+.navbar a:hover{
+  color: black;
+}
+
+
+.navbar .logo{
+  font-size: x-large;
+  font-weight: bold;
+  font-style: oblique;
+}
+.navbar .material-symbols-outlined{
+  font-size: x-large;
+  font-weight: bold;
+  
+}
+.navbar .container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:100%;
+}
+
+.navbar .nav a{
+  color:white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight:bold;
+  
+}
+
+.navbar ul{
+  display: flex;
+
+}
+.navbar ul li{
+  margin-left:20px;
+
+}
+
+.header{
+  background-color: darkblue;
+  color: white;
+  min-height: 350px;
+ 
+
+}
+.header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 3px solid rgb(228, 15, 15); */
+  height: 300px;
+
+}
+.header h1{
+  /* background-color: red; */
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+/* .header p{
+  background-color: black;
+  
+}  */
+.header img{
+  max-width: 400px;
+}
+
+.boxes .container{
+  display: flex;
+  justify-content: space-between;
+  /* border: 3px solid green; */
+}
+.box{
+border: 3px solid yellow;
+height: 200px;
+flex: 1;
+background-color: darkblue;
+color: white;
+border-radius: 15px;
+margin: 20px 10px ;
+box-shadow:0 3px 5px rgba(0, 0, 0,0.6 );
+padding:15px 20px;
+}
+.box i{
+  margin-right:10px;
+
+}
+
+@media(max-width:768px){
+.header.container{
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: center;
+}
+.boxes .container{
+  display: block;
+  text-align: center;
+}
+}
+.i{
+  font-size: 50px;
+}
+
+.fa-brands {
+  font-size: 100px;
+  color: red;
+}
+/* main{
+  height: 100%;
+  width: 100%;
+  background-color: #d5ff40;
+}
+
+nav{
+  /* background-color:blue; 
+  /* border: 4px solid black; 
+  padding:  60px 100px;
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  
+}
+nav .part2{
+
+} */
+
+/*----------------------(understanding flex-wrap )----------------------------------- 
+
+.cointainer{
+  margin-top: 30px;
+  height: 700px;
+  display: flex;
+  /* flex-direction: column; 
+  background-color: rgb(205, 136, 47);
+  justify-content: start; 
+  align-items: center;  
+  flex-wrap: wrap;
+}
+
+.item{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin:10px;
+
+}
+
+
+--------------------------------------------*/
+
+
+/*-----------------wrap reverse---------------------
+
+
+ .cointainer{
+  margin-top: 30px;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;    or flex-direction: row;  
+  background-color: rgb(205, 136, 47);
+  justify-content: start; 
+  align-items: center;  
+  flex-wrap: wrap-reverse;
+}
+
+
+.item{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin:10px;
+
+} 
+
+
+-------------------------------*/
+
+
+/*--------------------(flex-flow)-------------------
+
+
+.cointainer{
+  margin-top: 30px;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;     
+  background-color: rgb(205, 136, 47);
+  justify-content: start; 
+  align-items: center;  
+  flex-wrap: wrap;
+}
+
+
+.item{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin:10px;
+
+} 
+
+.item-1{
+  background-color:brown;
+  order: 2;
+}
+
+.item-2{
+  background-color:brown;
+  order: 3;
+}
+
+.item-3{
+  background-color:brown;
+  order: 1;
+}
+
+
+.item-4{
+  background-color:brown;
+  order: 1;
+}
+
+
+------------------------------------------------------------------------------------*/
+
+
+/*------------Flex-Box Project:--------------------------
+

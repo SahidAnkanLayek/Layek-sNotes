@@ -1,0 +1,160 @@
+                               UNDERSTANDING THE MAIN AXIS AND CROSS AXIS : WITH DISPLAY FLEX PROPERTY:
+------------------------------------------------------------------------------------------------------------------------------------------
+(A) display: flex  ====> <nav> bar ke display flex kora mane or vitor ar je je element or child a6e seigulo ke row or column wise divide kora .. y axis b / cross axis / column wise ...x axis ba main axis borabor....
+
+---> if we want to style to our element main axis wise then use 
+
+# (jutify content : flex-start )-- mane main axis has flex start attribute ..so all the element will align at the start of the main axis 
+
+# (jutify content : space-between ) -- mane extra space inside our flex item/ container will be put evenly between all the different item .
+
+# (jutify content : space-around) -- wanted to have space on the **outside of our container** as well , which puts an even amount of space on all side of the flex item and not just in between them  use (jutify content : space-around)
+
+# justify-content : Always works with main axis . 
+
+
+
+# Main axis ==>      <----------------------------->
+
+
+                                 ^
+                                 |
+                                 |
+                                 |
+#cross axis ==>                  |
+                                 |
+                                 |
+                                 |
+                                 
+
+  Layout item on the cross wise :
+  -------------------------------
+
+  2.align-items:Controls vertical alignment (e.g., stretch, center, flex-start). |  |  |  |  |  |
+    
+
+  # (align-items:flex-start) --place the item at the start of the cross axis 
+  # (align-items:flex-end) --place the item at the end of the cross axis 
+  # (align-items:center) --place the item at the middle of the cross axis
+  # (align-items:baseline) --will align items so that the baseline text of each item is aligned place the item at the middle of the cross
+     axis
+  # (align-self:end) --if we want to align "a specific flex-item cross axis wise "then use then we use (align-self:end).
+
+# flex-direction:column (Row by default)  , then main axis will become vertical .
+
+                    flex-direction: column ;
+                    align-item : start;
+
+  
+***justify content is aligning items on the main axis and align items is aligning items on the cross axis if we don't Define a flex Direction on the container then Flex direction is set to row by default which also means that the main axis is set to horizontal by default left to right and that the cross axis is set to Vertical by default top to bottom.
+
+
+# by default Flex items will all try to fit into one line when I add more items to The Container the items will start crushing each other .To fix this we can make our items wrap with the flex drop property by default this is set to "no wrap" .we can set it to wrap and now our items are no longer trying to fit into one line . but instead are allowed to wrap when there's no more space available. when we have Flex drop set to wrap a new property is unlocked the Align content. 
+
+Do not to confuse with align items with align content property.align content property only works when we have Flex wrap set to wrap and have items wrapping this property allows us to align everything on the cross axis. the possible values that go here are pretty much the same as with the Justified content . 
+
+
+
+/**** jodi amra flex-direction: column; kori then main axis will become in vrtical direction ..and cross axis will become horizontal axis *****/
+
+/* 
+This is default property */
+/**** jodi amra flex-direction: row; kori then main axis will become in horizontal direction ..and cross axis will become vertical axis *****/
+
+-----------------------------------------------------------
+|                  FLEX WRAP PROPERTY:                    |       
+-----------------------------------------------------------
+
+without flex-wrap:
+-----------------
+Without flex-wrap, all flex items are forced into a single line, which can cause layout overflow, making the design break or look cluttered. 
+
+flex-wrap allows items to flow onto new lines when the container’s space is insufficient, preventing overflow and maintaining a cleaner, more responsive layout.
+
+Without flex-wrap: Items stay on one line and overflow the container, possibly breaking the design.
+
+
+
+With flex-wrap:
+-----------------
+
+ Items wrap to the next line, fitting neatly within the container, maintaining a structured and responsive layout.
+ CSS positining 
+
+
+3 attributes :
+--------------
+
+1.nowrap  (default)
+-------------------
+
+
+Flex items are laid out in a single line, even if they overflow the container.
+
+
+2.wrap
+-------
+Flex items wrap onto multiple lines, from 
+
+--->top to bottom if in a horizontal direction
+
+--->left to right if in a vertical direction.
+
+3.wrap-reverse:
+---------------
+
+if (flex-direction:column and flex-wrap:wrap-reverse){
+
+  start form right side to lesf side 
+}
+
+elif (flex-direction:row and flex-wrap:wrap-reverse){
+
+  start form bottom to up  
+}
+
+
+flex-flow
+------------>
+
+   " flex-flow is the sort hand of flex-direction and flex-wrap"
+
+
+    flex-flow: <flex-direction><flex-wrap>
+
+
+flex-grow
+-------------->
+
+    The flex-grow property in CSS defines how much a flex item will grow relative to the rest of the flex items inside a flex container when there is extra space available. 
+
+     It determines the proportion of the available space the flex item should take.
+
+    If one flex item has a flex-grow of 2 and another has 1, the first item will take twice as much extra space as the second.
+
+
+
+    flex-grow: <number>;
+
+
+  flex-shrink(সঙ্কুচিত)
+ ------------------------->  
+
+The flex-shrink property in CSS specifies how much a flex item will shrink relative to the rest of the flex items inside a flex container when there is not enough space available. 
+
+
+It determines how the flex items should reduce their size when the container is too small.
+
+
+If one item has a flex-shrink of 2 and another has 1, the first item will shrink twice as much as the second. 
+
+
+
+
+
+
+
+
+
+
+
